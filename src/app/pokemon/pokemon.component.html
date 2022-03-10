@@ -1,0 +1,10 @@
+<div>
+    <button (click)="pushPokemons(1)">1ª Geração</button>
+    <button (click)="pushPokemons(2)">2ª Geração</button>
+    <button (click)="pushPokemons(3)">3ª Geração</button>
+  </div>
+  <button (click)="buttonConsole()">Console</button>
+
+  <div *ngIf="this.pokemonList != undefined">
+      <div *ngFor="let pkm of pokemonList.results">{{pkm.name}}</div>
+  </div>
